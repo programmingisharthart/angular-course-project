@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-course-project';
+  // openLink: string = 'recipe'
+  // openThisLink(e: string) {
+  //   console.log(e);
+  //   this.openLink = e
+  // }
 }

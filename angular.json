@@ -28,9 +28,11 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [ "./node_modules/bootstrap/dist/js/bootstrap.bundle.js"],
+            "allowedCommonJsDependencies": ["lodash"]
           },
           "configurations": {
             "production": {
@@ -103,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9ce4d53f-01b5-4b34-8041-e118e7a9b4af"
   }
 }

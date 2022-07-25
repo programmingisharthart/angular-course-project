@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+  <div class="container">
+    <a class="navbar-brand" href="#">Recipe Book</a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/recipe"
+            >Recipe</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            routerLinkActive="active"
+            class="nav-link"
+            routerLink="/shopping-list"
+            >Shopping List</a
+          >
+        </li>
+      </ul>
+      <div class="nav-item nav dropdown navbar-nav navbar-right">
+        <a
+          class="nav-link dropdown-toggle"
+          id="dropdownId"
+          style="cursor: pointer"
+          data-bs-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Manage</a
+        >
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a
+            class="dropdown-item"
+            style="cursor: pointer"
+            (click)="onSaveData()"
+            >Save Data</a
+          >
+          <a
+            class="dropdown-item"
+            style="cursor: pointer"
+            (click)="onFetchData()"
+            >Fetch Data</a
+          >
+        </div>
+      </div>
+      <!-- <form class="d-flex my-2 my-lg-0">
+        <input class="form-control me-sm-2" type="text" placeholder="Search" />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form> -->
+    </div>
+  </div>
+</nav>
